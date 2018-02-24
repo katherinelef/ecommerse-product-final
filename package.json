@@ -1,7 +1,7 @@
 {
   "name": "ecommerse-product-final",
   "version": "1.0.0",
-  "description": "* **Track:** _Especialización Front-end_\r * **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_\r * **Unidad:** _Producto final_",
+  "description": "+ \r + \r + \r +",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katherinelef/ecommerse-product-final.git"
+    "url": "git+https://github.com/betsy18/ecommerse-product-final.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katherinelef/ecommerse-product-final/issues"
+    "url": "https://github.com/betsy18/ecommerse-product-final/issues"
   },
-  "homepage": "https://github.com/katherinelef/ecommerse-product-final#readme",
+  "homepage": "https://github.com/betsy18/ecommerse-product-final#readme",
   "dependencies": {
     "express": "^4.16.2"
   }
