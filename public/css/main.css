@@ -1,0 +1,11 @@
+/* seteo */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.black{ 
+  background-color: black;
+  height: 3vh;
+}
