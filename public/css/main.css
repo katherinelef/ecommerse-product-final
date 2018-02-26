@@ -9,3 +9,29 @@
   background-color: black;
   height: 3vh;
 }
+
+img[alt="logo"]{
+  height: 8vh;
+  width: 12vw;
+}
+
+.tam{
+  height: 12vh;
+  width: 10vw;
+}
+
+/* .content{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto
+} */
+
+
+@media screen and (min-width:991px){
+  
+  img[alt="logo"]{
+    height: 10vh;
+    width: 6vw;
+  }
+
+}
