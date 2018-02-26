@@ -30,7 +30,7 @@ function getData() {
           </div>
           <div class="card-footer">
             <small class="text-muted"><i class="fa  fa-2x fa-cart-plus" aria-hidden="true"></i></small>
-            <a href="#" class="btn btn-default producto"  titulo="${result[index].title}" precio="${result[index].price}"role="button">Comprar</a>
+            <input class="btn btn-outline-info producto" type="submit" titulo="${result[index].title}" precio="${result[index].price}" value="Comprar">
           </div>
         </div>
         </div>`);
@@ -50,10 +50,10 @@ function getData() {
         $('.producto').click(function(e) {
           e.stopPropagation();
           paypal.minicart.cart.add({
-            business: 'test@gmail.com', // Cuenta paypal para recibir el dinero
-            itemName: $(this).attr('titulo'),
+            business: 'test@gmail.com', 
+            item_name: $(this).attr('titulo'),
             amount: $(this).attr('precio'),
-            currencyCode: 'USD',
+            currency_code: 'PEN',
           });
         });
       });
