@@ -30,12 +30,32 @@ function getData() {
           </div>
           <div class="card-footer">
             <small class="text-muted"><i class="fa  fa-2x fa-cart-plus" aria-hidden="true"></i></small>
-            <a href="#" class="btn btn-default producto" precio="${result[index].price}" titulo="${result[index].title}"role="button">Comprar</a>
+            <a href="#" class="btn btn-default producto"  titulo="${result[index].title}" precio="${result[index].price}"role="button">Comprar</a>
           </div>
         </div>
         </div>`);
         console.log(result[index].title);
         // $('img.tam').attr('src', '');
+        
+        //  carro de compras
+        paypal.minicart.render({
+          strings: {
+            button: 'Pagar'
+            , buttonAlt: 'Total'
+            , subtotal: 'Total:'
+            , empty: 'No hay productos en el carrito'
+          }
+        });
+
+        $('.producto').click(function(e) {
+          e.stopPropagation();
+          paypal.minicart.cart.add({
+            business: 'test@gmail.com', // Cuenta paypal para recibir el dinero
+            itemName: $(this).attr('titulo'),
+            amount: $(this).attr('precio'),
+            currencyCode: 'USD',
+          });
+        });
       });
     },
     fail: function(request) {
@@ -65,26 +85,5 @@ function getCategories() {
     }
   });
 }
-
-//  carro de compras
-
-paypal.minicart.render({
-  strings: {
-    button: 'Pagar'
-    , buttonAlt: 'Total'
-    , subtotal: 'Total:'
-    , empty: 'No hay productos en el carrito'
-  }
-});
-
-$('.producto').click(function(e) {
-  e.stopPropagation();
-  paypal.minicart.cart.add({
-    // business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
-    itemName: $(this).attr('titulo'),
-    amount: $(this).attr('precio'),
-    currencyCode: 'USD',
-  });
-});
 
 
