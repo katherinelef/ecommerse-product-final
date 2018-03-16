@@ -20,6 +20,11 @@ img[alt="logo"]{
   width: 10vw;
 }
 
+.img-carousel{
+  height: 65vh;
+}
+
+
 /* .content{
   display: flex;
   flex-wrap: wrap;
