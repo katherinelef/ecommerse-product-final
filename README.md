@@ -6,6 +6,8 @@ E-commerce es una tienda online, en la cual encontrarás toda las prendas de ves
 
 ![image](public/assets/images/img-readme.png)
 
+## Desarrollado para
 
+[Laboratoria](http://laboratoria.la)
 
 
