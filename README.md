@@ -4,7 +4,7 @@ E-commerce es una tienda online, en la cual encontrarás toda las prendas de ves
 
 ## Vista previa
 
-![image](public/assets/images/img-readme.png)
+![img-readme](https://user-images.githubusercontent.com/32281880/37982590-a124a888-31b6-11e8-9dbd-9d037292f3cc.png)
 
 ## Desarrollado para
 
